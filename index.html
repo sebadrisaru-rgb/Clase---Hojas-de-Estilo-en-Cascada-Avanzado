@@ -4,27 +4,131 @@
     <title>www.flexbox</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=devicewidth, initial-scale=1.0">
-    <title>Clase 2 - Hojas de estilo cascada avanzado</title>
+    <title>Dashboard Administrativo - Flexbox</title>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
     <link href="estilos.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-    <div class="marcador">
-        <h2>Tablero de Puntuaciones</h2>
-        <div class="jugador-list">
-            <div class="jugador"><span>Jugador 1:</span>
-                <span class="puntaje">120</span>
+
+
+    <aside class="sidebar">
+
+
+        <div class="logo-container">
+
+            <div class="logo">
+                <i class="fa-solid fa-chart-line"></i>
             </div>
-            <div class="jugador"><span>Jugador 2:</span>
-                <span class="puntaje">95</span>
+
+            <div class="brand-name">
+                <span class="brand-main">Analytics</span>
+                <span class="brand-secondary">ProMax</span>
             </div>
-            <div class="jugador"><span>Jugador 3:</span>
-                <span class="puntaje">140</span>
-            </div>
-            <div class="jugador"><span>Jugador 4:</span>
-                <span class="puntaje">110</span>
-            </div>
+
         </div>
+
+
+
+        <nav class="navigation">
+
+
+            <a href="#" class="nav-item active">
+
+                <i class="fa-solid fa-house nav-icon"></i>
+
+                <span class="nav-text">
+                    Resumen
+                </span>
+
+            </a>
+
+
+            <a href="#" class="nav-item">
+
+                <i class="fa-solid fa-users nav-icon"></i>
+
+                <span class="nav-text">
+                    Usuarios
+                </span>
+
+            </a>
+
+
+
+            <a href="#" class="nav-item">
+
+                <i class="fa-solid fa-folder-open nav-icon"></i>
+
+                <span class="nav-text">
+                    Proyectos
+                </span>
+
+            </a>
+
+            <a href="#" class="nav-item">
+
+                <i class="fa-solid fa-file-lines nav-icon"></i>
+
+                <span class="nav-text">
+                    Reportes
+                </span>
+
+            </a>
+
+
+            <!-- CONFIGURACIÓN -->
+            <a href="#" class="nav-item">
+
+                <i class="fa-solid fa-gear nav-icon"></i>
+
+                <span class="nav-text">
+                    Configuración
+                </span>
+
+            </a>
+
+
+            <!-- AYUDA -->
+            <a href="#" class="nav-item">
+
+                <i class="fa-solid fa-circle-question nav-icon"></i>
+
+                <span class="nav-text">
+                    Ayuda
+                </span>
+
+            </a>
+
+        </nav>
+
+
+
+        <div class="profile">
+
+            <div class="profile-avatar">
+                SS
+            </div>
+
+            <div class="profile-data">
+
+                <p class="profile-name">
+                    Sebastian Sarmiento
+                </p>
+
+                <p class="profile-role">
+                    Administrador
+                </p>
+
+            </div>
+
+        </div>
+
+    </aside>
+
 </body>
 
 </html>
