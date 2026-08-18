@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.marcador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 900px;
+    border: 2px solid #333;
+}
+
+.jugador-list {
+    display: flex;
+    gap: 10px;
+    /* esp. entre filas y columnas*/
+    width: 90%;
+    flex-direction: column;
+    /* para móvil */
+    justify-content: center;
+    align-items: center;
+}
+
+.jugador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3498db;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    border: 3px solid #fff;
+}
+
+.puntaje {
+    font-weight: bold;
+    margin-left: 45px;
+}
+
+@media (min-width: 768px) {
+
+    /* En escritorio */
+    .jugador-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        /* 4 columnas */
+        gap: 10px;
+        width: 100%;
+    }
+
+    .jugador {
+        width: 80%;
+    }
+}
